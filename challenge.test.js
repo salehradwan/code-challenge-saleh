@@ -11,7 +11,18 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
-
+    // const StrreverseString = str.map( value => {
+    //     const elementNotReverse = value;
+    //     const elementSplit = elementNotReverse.split('');
+    //     const elementReversed = elementSplit.reverse();
+    //     const elementJoin = elementReversed.join('');
+    //     return elementJoin;
+    // })
+        const elementSplit = str.split('');
+        const elementReversed = elementSplit.reverse();
+        const elementJoin = elementReversed.join('');
+        return elementJoin;
+    // return StrreverseString;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,6 +42,10 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
+    const arrL = Math.round(arr.length / 2);
+    const arrAddInTheMiddle = arr.splice(arrL, 0 , val);
+    console.log(arr);
+    return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
